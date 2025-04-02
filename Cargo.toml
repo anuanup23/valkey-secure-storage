@@ -1,0 +1,11 @@
+[package]
+name = "redis-private-store"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+redis-module = { version = "1.0", features = ["experimental-api"] }
+lazy_static = "1.4"
